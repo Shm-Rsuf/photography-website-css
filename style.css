@@ -188,7 +188,7 @@ header {
 }
 
 .header-image-lg {
-  width: 28rem;
+  width: 26rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -224,7 +224,7 @@ header {
 }
 
 .header-frame {
-  width: 20rem;
+  width: 18rem;
   border: 0.5rem solid var(--color-bg-3);
   box-shadow: 0 0 5rem rgba(0 0 0 / 0.5);
   position: absolute;
@@ -246,4 +246,75 @@ header {
 .header-frames:hover .header-frame:nth-child(2) {
   top: 0;
   left: 21rem;
+}
+/*============================ABOUT=====================*/
+#about {
+  margin-top: 20rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 43% 53%;
+  gap: 4%;
+}
+
+.about-left {
+  position: relative;
+}
+
+.about-image-bg {
+  width: 16rem;
+  height: 24rem;
+  background-color: var(--color-bg-4);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about-image-lg {
+  width: 30rem;
+  position: relative;
+  left: 1rem;
+  bottom: 1rem;
+  filter: saturate(0) brightness(0.5);
+  transition: var(--transition);
+}
+
+.about-image-md {
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+  left: 10rem;
+  top: 8rem;
+  overflow: hidden;
+  box-shadow: 2rem 2rem 2rem rgba(0 0 0 / 0.2);
+  transition: var(--transition);
+}
+
+.about-left:hover .about-image-md {
+  opacity: 0;
+}
+
+.about-left:hover .about-image-lg {
+  left: 0;
+  bottom: 0;
+  border: 1rem solid var(--color-bg-4);
+  filter: saturate(1) brightness(1);
+}
+
+.about-right {
+  margin-left: 5rem;
+}
+
+.about-title {
+  margin-bottom: 2rem;
+}
+
+.about-right p {
+  margin-bottom: 1.5rem;
+  width: 93%;
+}
+
+.about-btn {
+  margin-top: 1rem;
 }
